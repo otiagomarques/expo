@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 
 .navbar {
@@ -11,21 +11,33 @@ body {
   }
   
   .navbar a {
-    float: left;
+    float: right;
     display: block;
-    color: #eeeeee;
-    text-align: center;
+    color: black;
+    text-align: right;
     padding: 15px 18px;
     text-decoration: none;
     font-size: 18px;
   }
   
   .navbar a:hover {
-    color: #1c87c9;
+    color: white;
+  }
+
+  .navbar img {
+    float: left;
+    display: block;
+    padding: 15px 18px;
+    max-width: 0.1vw;
   }
   
   .container {
     padding: 18px;
     margin-top: 35px;
     height: 2000px;
+  }
+
+  .footer {
+    background-color: black;
+    color: white;
   }
