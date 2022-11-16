@@ -52,22 +52,74 @@ body {
     text-align: center;
     width: 120px;
     padding: 10px;
+    justify-content: center;
   }
 
   .caption {
     display: block;
+    justify-content: center;
   }
   
-  .container {
+  /*produto*/
+  .container-p {
     padding: 30px;
     margin-top: 60px;
     padding-top: 50px;
+    justify-content: center;
   }
 
-  .container img {
+  .container-p img {
     width: 100px;
     height: 100px;
   }
+
+
+  /*servico*/
+  .container-s .item {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    padding: 20px;
+
+  }
+
+  .container-s  {
+    padding: 30px;
+    margin-top: 60px;
+    padding-top: 10px;
+    justify-content: center;
+  }
+
+  .container-s img {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  /*marca*/
+
+  .container-m .item {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    padding: 20px;
+
+  }
+
+  .container-m  {
+    padding: 30px;
+    margin-top: 30px;
+    padding-top: 10px;
+  }
+
+  .container-m img {
+    padding: 5px 5px;
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+  }
+
+
 
   /*footer */
   .footer {
@@ -76,9 +128,13 @@ body {
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
-    align-items: left;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
   }
   
   .footer h3 {
@@ -89,6 +145,7 @@ body {
   .footer .info {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .footer img {
@@ -118,3 +175,37 @@ body {
     display: flex;
     flex-direction: row;
   }
+
+/* Responsive */
+
+@media (max-width: 715px) {
+
+    .body {
+      display: flex;
+      justify-content: center;
+
+    }
+    .navbar a {
+      opacity: 0;
+    }
+
+    .navbar img {
+      justify-content: center;
+    }
+
+    .footer .info  {
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+      padding: 10px 10px;
+    }
+
+    .footer {
+
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    
+
+}
