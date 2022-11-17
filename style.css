@@ -3,7 +3,6 @@ body {
     background-color: white;
     margin: 0px;
     font-family: lexend deca, sans-serif;
-    max-width: 904px;
 }
 
 
@@ -123,14 +122,15 @@ body {
 
 
   /*footer */
-  .footer {
+  .footer { 
     text-transform: uppercase;
-    padding:15px 18px ;
+    padding:40px 15px ;
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
   }
 
   .title {
@@ -199,12 +199,13 @@ body {
       justify-content: center;
       display: flex;
       padding: 10px 10px;
+    
     }
 
     .footer {
-
       flex-direction: column;
       justify-content: center;
+      align-content: center;
     }
 
     
