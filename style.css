@@ -44,6 +44,9 @@ body {
 
   /*content */
 
+  .news {
+      justify-content: cente
+  }
   .item {
     text-transform: lowercase;
     font-weight: lighter;
