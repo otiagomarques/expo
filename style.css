@@ -44,8 +44,15 @@ body {
 
   /*content */
 
-  .news {
-      justify-content: cente
+  #news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  #news  img { 
+    width: 50%;
   }
   .item {
     text-transform: lowercase;
@@ -66,8 +73,6 @@ body {
   /*produto*/
   .container-p {
     padding: 30px;
-    margin-top: 60px;
-    padding-top: 50px;
     justify-content: center;
   }
 
