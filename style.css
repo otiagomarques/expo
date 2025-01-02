@@ -3,6 +3,67 @@ body {
     background-color: white;
     margin: 0px;
     font-family: lexend deca, sans-serif;
+    margin-top: 90px;
+}
+
+/* Modal container */
+#modal-container {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Hide modal when checkbox is unchecked */
+#modal:not(:checked) + #modal-container {
+  display: none; /* Hide modal when checkbox is unchecked */
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.modal-text {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.close-btn:hover {
+  color: #555;
+}
+
+/* Hide the checkbox */
+#modal {
+  display: none;
 }
 
 
